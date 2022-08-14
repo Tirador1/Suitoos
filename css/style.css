@@ -47,26 +47,9 @@ body {
       font-family: "Aleo", serif;
 }
 
-.hero-section {
-
-      background-color: #e7eaed;
-      padding: 9.6rem 0;
-
-}
-
-.hero {
-      max-width: 130rem;
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 9.6rem;
-      align-items: center;
-}
-
-.hero-img {
-      width: 100%;
-}
-
+/*****************************/
+/* General Reusable Componants */
+/*****************************/
 .heading-primary {
       font-size: 5.2rem;
       font-weight: 700;
@@ -74,13 +57,6 @@ body {
       columns: #333;
       letter-spacing: -0.5px;
       margin-bottom: 3.2rem;
-}
-
-.hero-description {
-      font-size: 2rem;
-      line-height: 1.5;
-      margin-bottom: 4.8rem;
-
 }
 
 .btn:link,
@@ -99,6 +75,60 @@ body {
 .btn:active {
       background-color: #0e2238;
 }
+
+/*****************************/
+/* Header*/
+/*****************************/
+.header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: #e7eaed;
+      height: 9.6rem;
+      padding: 0 4.8rem;
+}
+
+.logo {
+      height: 2.8rem;
+
+}
+
+
+/*****************************/
+/* Hero Section*/
+/*****************************/
+.hero-section {
+
+      background-color: #e7eaed;
+      padding: 4.8rem 0 9.6rem 0;
+
+}
+
+.hero {
+      max-width: 130rem;
+      margin: 0 auto;
+      padding: 0 3.2rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9.6rem;
+      align-items: center;
+}
+
+.hero-img {
+      width: 100%;
+}
+
+
+
+.hero-description {
+      font-size: 2rem;
+      line-height: 1.5;
+      margin-bottom: 4.8rem;
+
+}
+
+
 
 .delivered-suits {
       display: flex;
