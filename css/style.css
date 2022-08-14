@@ -14,8 +14,8 @@
 - 02 Color: 
 ---Primary: #112A46  
 ---Gray: #D9E3E6
----Tints: #07111c
----Shades: #707f90
+---Tints: #07111c  #0e2238
+---Shades: #e7eaed
 ---Accent: 
 
 -05 Shadows:
@@ -44,14 +44,93 @@ body {
       font-weight: 400;
       line-height: 1;
       color: #555;
+      font-family: "Aleo", serif;
 }
 
-.test {
-      background-color: red;
-      /* width: 1000px; */
-      /* max-width: 1000px; */
-      max-width: 50rem;
-      padding: 4rem;
-      color: #fff;
+.hero-section {
+
+      background-color: #e7eaed;
+      padding: 9.6rem 0;
+
+}
+
+.hero {
+      max-width: 130rem;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9.6rem;
+      align-items: center;
+}
+
+.hero-img {
+      width: 100%;
+}
+
+.heading-primary {
+      font-size: 5.2rem;
+      font-weight: 700;
+      line-height: 1.05;
+      columns: #333;
+      letter-spacing: -0.5px;
+      margin-bottom: 3.2rem;
+}
+
+.hero-description {
       font-size: 2rem;
+      line-height: 1.5;
+      margin-bottom: 4.8rem;
+
+}
+
+.btn:link,
+.btn:visited {
+      display: inline-block;
+      background-color: #112A46;
+      font-size: 2rem;
+      color: #fff;
+      padding: 1.6rem 3.2rem;
+      text-decoration: none;
+
+      transition: background-color 1s;
+}
+
+.btn:hover,
+.btn:active {
+      background-color: #0e2238;
+}
+
+.delivered-suits {
+      display: flex;
+      align-items: center;
+      gap: 1.6rem;
+      margin-top: 8rem;
+}
+
+.delivered-imgs {
+      display: flex;
+}
+
+.delivered-imgs img {
+      height: 4.8rem;
+      width: 4.8rem;
+      border-radius: 50%;
+      margin-right: -1.6rem;
+      border: 3px solid #e7eaed;
+}
+
+.delivered-imgs img:last-child {
+      margin-right: 0;
+}
+
+.delivered-text {
+      font-size: 1.8rem;
+      font-weight: 700;
+}
+
+.delivered-text span {
+      color: #07111c;
+      font-family: "Rubik", sans-serif;
+      font-weight: 800;
+
 }
