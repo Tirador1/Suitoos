@@ -46,11 +46,10 @@ html {
 }
 
 body {
-  font-family: sans-serif;
+  font-family: "Eczar", serif;
   font-weight: 400;
   line-height: 1;
   color: #555;
-  font-family: "Aleo", serif;
 }
 
 /*****************************/
@@ -68,6 +67,11 @@ body {
   display: grid;
   column-gap: 6.4rem;
   gap: 9.6rem;
+
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
 }
 
 .grid--2-row {
@@ -84,6 +88,10 @@ body {
 
 .grid--3-cols {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid--center-v {
@@ -113,7 +121,8 @@ body {
   margin-bottom: 8.6rem;
 }
 
-.heading-primary:hover {
+.heading-primary:hover,
+.heading-secondary:hover {
   color: #414445;
 }
 
@@ -133,6 +142,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -141,12 +151,30 @@ body {
   color: #fff;
   padding: 1.6rem 3.2rem;
   text-decoration: none;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Eczar', sans-serif;
   font-weight: 500;
   transition: background-color 1s;
+
+  border: 0;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn:hover,
 .btn:active {
   background-color: #0e2238;
+}
+
+.btn--form {
+  background-color: #112A46;
+  color: #e7eaed;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #112A46;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(18, 42, 69, 0.5);
 }

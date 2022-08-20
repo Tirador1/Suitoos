@@ -26,7 +26,7 @@
       display: flex;
       align-items: center;
       gap: 3.2rem;
-      font-family: 'Rubik', sans-serif;
+      font-family: 'Eczar', serif;
 }
 
 .main-nav-link:link,
@@ -47,8 +47,8 @@
 .main-nav-link.nav-cta:link,
 .main-nav-link.nav-cta:visited {
       padding: 1.2rem 2.4em;
-      border-radius: 9px;
       color: #fff;
+      border-radius: 2px;
       background-color: #112A46;
 }
 
@@ -123,7 +123,7 @@
 
 .delivered-text span {
       color: #07111c;
-      font-family: "Rubik", sans-serif;
+      font-family: sans-serif;
       font-weight: 800;
 
 }
@@ -276,4 +276,278 @@
 .heading-cards {
       font-size: 2.6rem;
       transition: all 0.5s;
+}
+
+.section-cards .btn {
+      font-size: 1.6rem;
+}
+
+/*****************************/
+/* Testimonials section*/
+/*****************************/
+
+.section-tesiomnials {
+      display: grid;
+      grid-template-columns: 65fr 35fr;
+      align-items: center;
+}
+
+.testimonials {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 4.8rem;
+      column-gap: 8rem;
+
+}
+
+.testimonial-container {
+      padding: 9.6rem;
+}
+
+.testimonial-img {
+      width: 6.4rem;
+      border-radius: 50%;
+      margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-bottom: 1.6rem;
+      font-weight: 500;
+}
+
+.testimonial-name {
+      font-size: 1.6rem;
+      color: #586a7e;
+}
+
+.gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.6rem;
+      padding: 1.6rem;
+}
+
+.gallery-item {
+      overflow: hidden;
+}
+
+.gallery-item img {
+      display: block;
+      width: 100%;
+      transition: all 0.4s;
+}
+
+.gallery-item img:hover {
+      transform: scale(1.15);
+}
+
+
+/*****************************/
+/* Contact Us section*/
+/*****************************/
+
+.section-contacts {
+      padding: 9.6rem 0 12.8rem 0;
+}
+
+.contact-list {
+      display: grid;
+      grid-template-rows: 1fr auto auto;
+      text-align: center;
+      justify-items: center;
+      column-gap: 6.4rem;
+      list-style: none;
+      gap: 0.8rem;
+}
+
+
+.heading-contact {
+      font-family: 'Rubik', sans-serif;
+      font-size: 2.4rem;
+}
+
+.heading-contact a:link,
+.heading-contact a:visited {
+      text-decoration: none;
+      color: #07111c;
+      font-weight: 600;
+}
+
+.contact-description {
+      font-size: 1.6rem;
+      font-family: 'Eczar', serif;
+}
+
+.contact-icon {
+      font-size: 3.2rem;
+      color: #07111c;
+      font-weight: 700;
+      background-color: #e7eaed;
+      padding: 1rem;
+      border-radius: 50%;
+}
+
+/*****************************/
+/* CTA section*/
+/*****************************/
+
+.section-cta {
+      padding: 9.6rem 0;
+
+}
+
+.cta {
+      display: grid;
+      background-color: #112A46;
+      grid-template-columns: 2fr 1fr;
+      box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+      border-radius: 2px;
+      overflow: hidden;
+      background-image: linear-gradient(135deg, #a0aab5, #cfd4da);
+}
+
+.cta-text-box {
+      color: #07111c;
+      padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-text {
+      font-size: 1.8rem;
+      line-height: 1.8;
+      margin-bottom: 4.8rem;
+}
+
+.cta-text-box h2 {
+      font-size: 3.6rem;
+      line-height: 1.2;
+      margin-bottom: 3rem;
+      margin-bottom: 3.2rem;
+}
+
+.cta-img-box {
+      background-image: linear-gradient(135deg, rgba(7, 17, 28, 0.35), rgba(65, 85, 107, 0.35)), url('../img/suiting.png');
+      background-size: cover;
+      background-position: center;
+}
+
+.cta-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3.2rem;
+      row-gap: 2.4rem;
+
+}
+
+.cta-form label {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 500;
+      margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+      width: 100%;
+      padding: 1.2rem;
+      font-size: 1.8rem;
+      font-family: inherit;
+      color: inherit;
+      border: none;
+      background-color: #e7eaed;
+      border-radius: 2px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.cta-form input::placeholder {
+      color: #aaa;
+}
+
+.cta-form button {
+      font-family: inherit;
+}
+
+.cta *:focus {
+      outline: none;
+      /* outline: 4px dotted #112A46;
+      outline-offset: 8px; */
+      box-shadow: 0 0 0 0.8rem rgba(231, 234, 237, 0.5);
+}
+
+/*****************************/
+/* Footer */
+/*****************************/
+
+.footer {
+      padding: 12.8rem 0;
+      border-top: 1px solid #eee;
+}
+
+.grid--footer {
+      grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+      display: flex;
+      flex-direction: column;
+}
+
+.footer-logo {
+      display: block;
+      margin-bottom: 3.2rem;
+}
+
+.social-links {
+      list-style: none;
+      display: flex;
+      gap: 2.4rem;
+}
+
+.social-icon {
+      height: 2.4rem;
+      width: 2.4rem;
+}
+
+.copyright {
+      font-size: 1.4rem;
+      line-height: 1.6;
+      color: #767676;
+      margin-top: auto;
+}
+
+.footer-heading {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 4rem;
+}
+
+.contacts {
+      font-style: normal;
+      font-size: 1.6rem;
+      line-height: 1.6;
+}
+
+.address {
+      margin-bottom: 2.4rem;
+}
+
+.footer-nav {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+      text-decoration: none;
+      font-size: 1.46rem;
+      color: #767676;
+      transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+      color: #555;
 }
